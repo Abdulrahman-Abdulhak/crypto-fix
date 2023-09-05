@@ -22,6 +22,6 @@ website design by [_@haiderQanber_](https://www.behance.net/haidardesign) using 
 
 follow me on social media:
 
-*. [LinkedIn](https://www.linkedin.com/in/abdulrahman-abdulhak-76063b222/)
-*. [Instagram](https://www.instagram.com/abdulrahman_abhaq/)
-*. [Facebook](https://www.facebook.com/abdulrahman.hak.7/)
+* [LinkedIn](https://www.linkedin.com/in/abdulrahman-abdulhak-76063b222/)
+* [Instagram](https://www.instagram.com/abdulrahman_abhaq/)
+* [Facebook](https://www.facebook.com/abdulrahman.hak.7/)
