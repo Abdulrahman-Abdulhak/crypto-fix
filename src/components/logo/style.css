@@ -1,0 +1,23 @@
+.logo {
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+.logo .unique {
+  position: relative;
+}
+
+.logo .unique::before {
+  content: '';
+
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 1;
+
+  background-color: currentColor;
+  border-radius: 50%;
+
+  top: 0;
+  left: 0;
+  transform: translateY(calc(-100% - 0.02rem));
+}

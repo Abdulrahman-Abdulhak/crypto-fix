@@ -1,0 +1,25 @@
+.ready {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  gap: var(--rem-1-5, 1.5rem);
+  margin-block: var(--rem-7, 7rem);
+
+  --_font-size: var(--rem-1-625, 1.625rem);
+}
+
+.ready span {
+  font-size: var(--_font-size);
+  line-height: 1;
+}
+
+.ready .btn {
+  font-size: var(--_font-size);
+  background-color: var(--primary-color);
+}
+
+.ready .btn:hover {
+  background: var(--primary-color-60, #a151e1);
+}

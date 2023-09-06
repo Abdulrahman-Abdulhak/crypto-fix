@@ -1,0 +1,32 @@
+import { QuickLink, QuickLinks } from '../models/quick-link'
+
+export const quickLinks = [
+  new QuickLinks('Social', [
+    new QuickLink({ label: 'Facebook', ref: 'https://unvalid-address.not' }),
+    new QuickLink({ label: 'Twitter', ref: 'https://unvalid-address.not' }),
+    new QuickLink({ label: 'Instagram', ref: 'https://unvalid-address.not' }),
+    new QuickLink({ label: 'LinkedIn', ref: 'https://unvalid-address.not' }),
+  ]),
+  new QuickLinks('Reach us', [
+    new QuickLink({
+      label: 'Contact form',
+      ref: 'https://unvalid-address.not',
+    }),
+    new QuickLink({
+      label: '555-555-1234',
+      ref: 'tel:555-555-1234',
+      classes: 'no-decoration',
+    }),
+    new QuickLink({
+      label: 'contact@cryptofix.com',
+      ref: 'mailto:contact@cryptofix.com',
+      classes: 'no-decoration',
+    }),
+  ]),
+  new QuickLinks('Ad Types', [
+    new QuickLink({ label: 'Banner', ref: 'https://unvalid-address.not' }),
+    new QuickLink({ label: 'Video', ref: 'https://unvalid-address.not' }),
+    new QuickLink({ label: 'Influencers', ref: 'https://unvalid-address.not' }),
+    new QuickLink({ label: 'Exchanges', ref: 'https://unvalid-address.not' }),
+  ]),
+]

@@ -1,0 +1,81 @@
+.testy {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testy p {
+  width: 50%;
+
+  font-size: var(--rem-2-625, 2.625rem);
+  text-align: center;
+}
+
+.testy p span {
+  display: inline-block;
+  position: relative;
+}
+
+.testy p span:first-of-type::before,
+.testy p span:last-of-type::after {
+  content: '“';
+
+  display: block;
+  position: absolute;
+
+  font-size: 5.75rem;
+  color: var(--primary-color-30, #4e4554);
+
+  --_offset: 0.25rem;
+}
+
+.testy p span:first-of-type::before {
+  top: 0;
+  left: 0;
+
+  transform: translate(calc(-100% - var(--_offset)), -20%);
+}
+
+.testy p span:last-of-type::after {
+  bottom: 0;
+  right: 0;
+
+  transform: translate(calc(100% + var(--_offset)), 20%) rotate(0.5turn);
+}
+
+.testy .profile {
+  display: grid;
+
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  align-items: center;
+
+  column-gap: var(--rem-1-69, 1.69rem);
+  justify-items: flex-start;
+}
+
+.testy img {
+  grid-row: 1 / -1;
+
+  border-radius: 50%;
+  object-fit: cover;
+
+  width: var(--rem-5-625, 5.625rem);
+  height: var(--rem-5-625, 5.625rem);
+}
+
+.testy .name {
+  align-self: flex-end;
+  font-size: var(--rem-1-5, 1.5rem);
+
+  font-weight: 700;
+}
+
+.testy .website {
+  align-self: flex-start;
+  font-size: var(--rem-1-5, 1.5rem);
+}

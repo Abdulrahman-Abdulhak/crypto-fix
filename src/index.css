@@ -1,0 +1,127 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Aileron, sans-serif;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: #fff;
+  background-color: #1a171c;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --primary-color-10: #1a171c;
+  --primary-color-13: #211f23;
+  --primary-color-15: #27222a;
+  --primary-color-20: #333036;
+  --primary-color-25: #403946;
+  --primary-color-30: #4e4554;
+  --primary-color: #8200e9;
+  --primary-color-60: #a151e1;
+  --primary-color-70: #b4adb8;
+  --primary-color-80: #cdc7d1;
+
+  --text-hover: #d8bdeb;
+
+  --rem-7: clamp(3.3rem, 4vw + 1.5rem, 7rem);
+  --rem-6-75: clamp(3rem, 4vw + 1.2rem, 6.75rem);
+  --rem-5-625: clamp(2.5rem, 3vw + 1.1rem, 5.625rem);
+  --rem-5: clamp(2.5rem, 3vw + 1rem, 5rem);
+  --rem-4-125: clamp(1.5rem, 2vw + 1rem, 4.125rem);
+  --rem-4: clamp(1.475rem, 2vw + 0.9rem, 4rem);
+  --rem-3: clamp(1.2rem, 2vw + 0.7rem, 3rem);
+  --rem-2-625: clamp(1.1rem, 2vw + 0.65rem, 2.625rem);
+  --rem-2: clamp(1rem, 2vw + 0.6rem, 2rem);
+  --rem-1-875: clamp(0.875rem, 1.1vw + 0.55rem, 1.875rem);
+  --rem-1-75: clamp(0.75rem, 1.1vw + 0.5rem, 1.75rem);
+  --rem-1-625: clamp(0.7rem, 1.1vw + 0.5rem, 1.625rem);
+  --rem-1-69: clamp(0.7rem, 1vw + 0.5rem, 1.69rem);
+  --rem-1-5: clamp(0.65rem, 1vw + 0.5rem, 1.5rem);
+  --rem-1-25: clamp(0.6rem, 1vw + 0.5rem, 1.25rem);
+  --rem-1: clamp(0.5rem, 1vw + 0.4rem, 1rem);
+  --rem-0-5: clamp(0.2rem, 0.5vw + 0.1rem, 0.5);
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: var(--primary-color-10);
+
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+h1,
+.h1 {
+  font-size: var(--rem-5, 5rem);
+  font-weight: 700;
+
+  margin: 0.5em 0;
+}
+
+h2,
+.h2 {
+  font-size: var(--rem-3, 3rem);
+  font-weight: 700;
+}
+
+h3,
+.h3 {
+  font-size: var(--rem-1-75, 1.75rem);
+  font-weight: 700;
+}
+
+.subheadline {
+  font-size: var(--rem-1-75, 1.75rem);
+  font-weight: 400;
+  line-height: 116%;
+}
+
+p,
+.paragraph {
+  color: var(--primary-color-80, #cdc7d1);
+  font-size: var(--rem-1-25, 1.25rem);
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+button {
+  border: 1px solid transparent;
+  outline: none;
+  appearance: none;
+
+  font-size: inherit;
+  font-family: inherit;
+
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td {
+  border: none;
+}

@@ -1,0 +1,55 @@
+.main-nav {
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  z-index: 1000;
+}
+
+.main-nav .logo {
+  font-size: var(--rem-2, 2rem);
+}
+
+.main-nav .menu {
+  display: flex;
+  align-items: center;
+  gap: 3.7rem;
+}
+
+.main-nav :is(.menu, .auth) a {
+  font-size: var(--rem-1-25, 1.25rem);
+}
+
+.main-nav .menu a:hover {
+  color: var(--text-hover, #d8bdeb);
+}
+
+.main-nav a.active {
+  font-weight: 700;
+}
+
+.main-nav .auth {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 4.5rem;
+}
+
+.main-nav .auth a {
+  color: var(--text-hover, #d8bdeb);
+}
+
+.main-nav .btn {
+  background: var(--primary-color, #8200e9);
+}
+
+.main-nav .btn:hover {
+  background: var(--primary-color-60, #a151e1);
+}

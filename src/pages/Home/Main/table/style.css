@@ -1,0 +1,56 @@
+.table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table :is(th, td) {
+  padding: var(--rem-2, 2rem) var(--rem-4, 4rem);
+}
+
+.table thead th {
+  color: var(--primary-color-70);
+  font-size: var(--rem-1, 1rem);
+  font-weight: 400;
+}
+
+.table thead th:first-of-type {
+  text-align: start;
+}
+
+.table tbody {
+  background-color: var(--primary-color-13);
+
+  --_border-radius: 1rem;
+}
+
+.table tbody th {
+  text-align: start;
+
+  color: var(--primary-color-80, #cdc7d1);
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  padding-inline-end: var(--rem-7, 7rem);
+}
+
+.table td {
+  border-left: 1px solid var(--primary-color-25);
+
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+
+  user-select: none;
+}
+
+.table td[aria-label='check']::after {
+  content: url('../../../../assets/icons/check-circle.svg');
+
+  display: inline-block;
+
+  width: var(--rem-2-125, 2.125rem);
+  height: var(--rem-2-125, 2.125rem);
+
+  border-radius: 50%;
+}

@@ -1,0 +1,25 @@
+.main-container {
+  margin-inline: auto;
+  padding: 2rem 1.5rem;
+
+  max-width: 1440px;
+}
+
+.btn {
+  padding: 0.69em 1em;
+  border-radius: 0.3125rem;
+
+  font-size: var(--rem-1-25, 1.25rem);
+  font-weight: 700;
+  text-transform: capitalize;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.no-decoration,
+.no-decoration * {
+  text-decoration: none !important;
+}
