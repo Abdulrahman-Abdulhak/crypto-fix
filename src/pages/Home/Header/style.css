@@ -63,7 +63,6 @@
 .hero .background > *:nth-child(2) img {
   --_x: -50%;
 
-  top: 4px;
   left: 50%;
   transform: translateX(var(--_x));
 }
@@ -73,7 +72,7 @@
   right: 0;
 }
 
-.hero .background > *:hover img {
+.hero .background > :is(.hover, *:hover) img {
   transform: translate(var(--_x, 0), -5%);
   filter: blur(var(--_blur)) saturate(100%) contrast(100%) grayscale(0);
 }

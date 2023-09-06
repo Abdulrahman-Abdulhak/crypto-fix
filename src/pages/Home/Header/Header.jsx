@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 
 import Property from './components/Property'
 
@@ -7,12 +7,18 @@ import line from '../../../assets/icons/line.svg'
 import leaf from '../../../assets/icons/leaf.svg'
 import card from '../../../assets/icons/card.svg'
 
+import { backgroundEffects } from './hooks/events'
 import './style.css'
 
 const Header = () => {
+  const header = useRef(null)
+  const background = useRef(null)
+
+  backgroundEffects(header, background)
+
   return (
-    <header className='hero'>
-      <div className='background'>
+    <header ref={header} className='hero'>
+      <div ref={background} className='background'>
         <div>
           <img src={heroBG} alt='' />
         </div>
